@@ -1,0 +1,239 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    /* text-align: justify is used to align the paragraph to form something like a box. It removes the space from the right edge.
+    
+    font-family, font-size, font-weight, font-style, text-align, text-transform(for upper case and lower case), text-decoration(for underline, overline, line-through), line-height
+    
+    
+    for font-size, you can use rem, rem is relative to the font-size of the page. 3rem meaning 3x the font-size of the page.
+    
+    you can also use em, in this case the em is in relation to the parent div
+    
+    the default px for the body font is 16px
+    here are some guidelines for headers font-sizes;
+    H1 - 2.5rem (40px)
+    H2 - 2rem (32px)
+    H3 - 1.75rem (28px)
+    H4 - 1.5rem (24px)
+    H5 - 1.25rem (20px)
+    H6 - 1rem (16px)
+
+      
+    
+    smaller texts can be set to 0.875rem (14px)
+    larger texts can be set to 1.25rem (20px)
+    
+    Color
+    rgba (20, 20, 20, 0 - 1)
+    0 - transparent
+    1 - opaque
+    0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(78, 104, 113);
+}
+
+h1 {
+    color: rgb(78, 104, 113);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+#navbar {
+    padding: 8px;
+    margin-bottom: -4px;
+
+}
+
+#logo {
+    height: 30px;
+}
+
+#about {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#banner {
+    object-fit: cover;
+    width: 100%;
+}
+
+#description {
+    width: 50%;
+    padding: 0 8px;
+    font-size: 1.25rem;
+}
+
+#team {
+    width: 50%;
+}
+
+#team-img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+#jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#footer {
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+}
+
+#footer-links li {
+    display: inline;
+    margin: 0 16px;
+}
+
+#application_div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#application_form label {
+    font-weight: 600;
+}
+
+#application_form div {
+    margin: 16px;
+}
+
+#application_form input, select, textarea {
+    padding: 4px;
+    margin-top: 4px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#application_form input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+#application_form textarea {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#application_form input[type="submit"] {
+    background-color: rgb(78, 104, 113);
+    color: white;
+    padding: 8px;
+}
+
+#application_form input[type="submit"]:hover {
+    background-color: rgb(28, 57, 67);
+    cursor: pointer;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.location {
+    color: grey;
+    margin-bottom: 16px;
+}
+
+.apply {
+    float: right;
+}
+
+.copyright {
+    color: grey;
+    font-size: 0.875rem;
+}
+
+#jobs-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+.jobs-header-row {
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.jobs-header-row th {
+    padding: 8px;
+    border-right: 1px solid gray;
+}
+
+.jobs-data-row {
+    height: 35px;
+    text-align: center;
+    text-align: left;
+    /* 
+        you can also align data in cell verically using the vertical-align: bottom/top
+    */
+    
+}
+
+.jobs-data-row td {
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+tr:hover {
+    background-color: #efefef;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+/*
+this is used when data on the x-axis is wider than the screen, a scroll button is used 
+
+.table-div {
+    overflow-x:auto;
+}
+
+*/
