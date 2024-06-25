@@ -1,5 +1,5 @@
-* {
-    font-size: 16px;
+html {
+    font-size: 14px;
 }
 
 body {
@@ -7,8 +7,51 @@ body {
     padding: 0;
     font-family: 'roboto', sans-serif;
     font-weight: 400;
+    color: #444444;
+    font-size: 1rem;
     text-align: justify;
-    /* text-align: justify is used to align the paragraph to form something like a box. It removes the space from the right edge.
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222222;;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+a {
+    text-decoration: none;
+    color: #3B82F6;
+}
+
+a:hover {
+    color: #1D4ED8;
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+/*
+
+ /* text-align: justify is used to align the paragraph to form something like a box. It removes the space from the right edge.
     
     font-family, font-size, font-weight, font-style, text-align, text-transform(for upper case and lower case), text-decoration(for underline, overline, line-through), line-height
     
@@ -36,20 +79,8 @@ body {
     0 - transparent
     1 - opaque
     0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1*/
-}
+/*
 
-@media screen and (min-width: 400px) and (max-width: 600px){
-    body {
-        background-color: lightblue;
-    }
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'inter', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(78, 104, 113);
-}
 
 h1 {
     color: rgb(78, 104, 113);
@@ -171,10 +202,6 @@ h3 {
     margin-top: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 .location {
     color: grey;
     margin-bottom: 16px;
@@ -220,7 +247,7 @@ a {
     */
     
 }
-
+/*
 .jobs-data-row td {
     padding: 8px;
     border: 1px solid gray;
